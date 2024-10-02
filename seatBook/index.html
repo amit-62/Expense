@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<style>
+    .center-div {
+            text-align: center;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+        }
+</style>
+<body style="margin: 0">
+    <div class="center-div">
+        <h1>Movie Booking</h1>
+        <p>Total booking: <span id="totalBooking">0</span></p>
+        <label for="search">Find slot: </label>
+        <input type="text" name="search" id="search" />
+        <button id="findBooking">Find</button>
+    </div>
+    <form onsubmit="handleFormSubmit(event)">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+        <label for="seat">Seat</label>
+        <input type="seat" name="seat" id="seat" />
+        <button type="submit">Submit</button>
+    </form>
+  <ul></ul>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+<script src="index.js"></script>
+
+</html>
